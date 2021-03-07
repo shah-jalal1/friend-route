@@ -1,6 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
-import Friend from '../Friend/Friend';
+import Friends from '../Friends/Friends';
 
 const Home = () => {
   const [friends, setFriends] = useState([]);
@@ -15,7 +15,7 @@ const Home = () => {
         <div>
             <h1>Friends: {friends.length}</h1>
         {
-          friends.map(friend => <Friend friend={friend}></Friend>)
+          friends.map(friend => <Friends friend={friend}></Friends>)
         }
         </div>
     );
